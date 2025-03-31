@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const output = document.getElementById('output');
 
     // Display Loading row
-    output.innerHTML = '<tr><td colspan="2" class="text-center">Loading...</td></tr>';
+    output.innerHTML = '<tr id="loading"><td colspan="2" class="text-center">Loading...</td></tr>';
 
     function createPromise(name) {
         const delay = Math.floor(Math.random() * 3000) + 1000;
